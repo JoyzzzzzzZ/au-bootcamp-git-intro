@@ -102,3 +102,8 @@ do
 	echo "$n basename $filepath"
 done
 echo $S
+
+#CTracy comments: This is close but is still failing the tests when you run "sh run_tests.sh" for one main reason:
+#1. in your echo it is calling the word basename, go ahead and create a variable that pulls the basename from the filepath and then call that variable in your echo
+# THis should produce just the file name and not pull the entire file path
+
