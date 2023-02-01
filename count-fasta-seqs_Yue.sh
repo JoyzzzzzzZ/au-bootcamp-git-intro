@@ -99,7 +99,8 @@ for filepath in "$@"
 do
 	n=`grep '^>' $filepath |wc -l`
 	S=`expr $S + $n`
-	echo "$n basename $filepath"
+	fn=`basename $filepath`
+	echo "$n $fn"
 done
 echo $S
 
