@@ -100,7 +100,7 @@ do
 	n=`grep '^>' $filepath |wc -l`
 	S=`expr $S + $n`
 	fn=`basename $filepath`
-	echo "$n $fn"
+	echo $n $fn
 done
 echo $S
 
